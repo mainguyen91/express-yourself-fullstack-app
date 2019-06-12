@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500|Vollkorn:400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fa fas fa-heartbeat"></i></button>
+        <div class="dropdown-content">
+            <a class="active" href="/"><i class="fa fas fa-home"></i> Home</a>
+            <a href="/register"><i class="fa fas fa-user-plus"></i> Register</a>
+            <a href="/login"><i class="fa fas fa-sign-in-alt"></i> Login</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <a class="active" href="/"><i class="fa fas fa-home"></i> Home</a>
+        <a href="/register"><i class="fa fas fa-user-plus"></i> Register</a>
+        <a href="/login"><i class="fa fas fa-sign-in-alt"></i> Login</a>
+    </div>
+
+    <div>
+        <form method="POST" action="/login">
+            <h1>Login</h1>
+            <p class="instruction">Enter your profile information and step into a wonderful world of pure joy</p>
+            <div class="form">
+                <label for="username" class="text"><b>Username</b></label>
+                <input type="text" name="username" placeholder="Username" autocomplete="off">
+                <label for="password" class="text"><b>Password</b></label>
+                <input type="password" name="password" placeholder="Enter Password" autocomplete="off">
+                <br>
+            </div>
+            <div class="reg">
+                <input class="button" type="submit" value="Login">
+                &nbsp;
+                <a href="/register"><input class="button" type="button" value="Not a member? Register"></a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
