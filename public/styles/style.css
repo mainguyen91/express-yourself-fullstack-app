@@ -154,6 +154,15 @@ input::-webkit-input-placeholder {
     text-decoration: none;
 }
 
+.smalltext {
+    font-family: 'Raleway', Sans-Serif;
+    color: #A5D8F3;
+    font-size: 15px;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-align: justify;
+}
+
 .instruction {
     font-family: 'Raleway', Sans-Serif;
     color: #A5D8F3;
@@ -222,6 +231,16 @@ textarea[type=text]:focus {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+}
+
+.about {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #201B21;
+    border: 1px solid #FDC7D7;
+    box-shadow: 8px 8px 7px grey;
 }
 
 .message {

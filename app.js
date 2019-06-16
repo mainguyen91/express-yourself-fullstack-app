@@ -5,6 +5,7 @@ const {
 } = require('./database/config/dbConfig');
 
 const getHome = require("./controllers/homeController");
+const getAbout = require("./controllers/aboutController");
 const getProfile = require("./controllers/profileController");
 const getLogout = require("./controllers/logoutController");
 const {
@@ -59,6 +60,8 @@ let isGroupLoggedIn = (req, res, next) => {
 }
 
 app.get('/', isGroupLoggedIn, getHome);
+
+app.get('/about', getAbout);
 
 app.get('/register', isGroupLoggedIn, isGroupLoggedIn, getRegistrationPage);
 
